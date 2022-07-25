@@ -14,7 +14,7 @@ const Header = () => {
     const [openModal, setOpenModal] = useState(false)
     return (
         <>
-            <Container position="static" maxWidth="xl" className="header_content"
+            <Container  maxWidth="xl" className="header_content"
                        style={{paddingLeft: "0", margin: "0", marginBottom: "40px", display: "flex"}}>
                 <Link to="/"><img src={logo} alt="logo"/></Link>
                 <Search/>

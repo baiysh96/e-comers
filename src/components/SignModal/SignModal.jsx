@@ -83,6 +83,7 @@ const style = {
                                         color="secondary"
                                         sx={{
                                             marginBottom: 2,
+                                            textTransform: "lowerCase"
                                         }}
                                     >
                                         Login

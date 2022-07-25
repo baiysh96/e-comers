@@ -12,11 +12,11 @@ export const getProducts = () => {
             })
     }
 }
-export const addCart = (id,product) => {
+export const addCart = (index) => {
     return (dispatch, getState) => {
-        const filtered = getState().products.map(item => {
-            if (item.id === id) {
-                return getState().cart.push(product)
+        const filtered = getState().products.map((item, idx) => {
+            if (index === idx) {
+                return getState().cart.push(item)
             }
             return item
         })
